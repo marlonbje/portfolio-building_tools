@@ -116,7 +116,7 @@ class Datahandler:
                 return frame.sort_values(by='ps_ttm')
                 
             else:
-                info = yf.Ticker(self.stocks[0])
+                info = yf.Ticker(self.stocks[0]).info
                 name = info['longName']
                 
                 data = {
